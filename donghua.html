@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            left: 250px;
+        }
+        span{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <button>123</button>
+    <div>燕子</div>
+    <script>
+        var div = document.querySelector("div");
+        var span = document.querySelector('span');
+        function donghua1(dx,jl,callback){
+            var timer1 = setInterval(function(){
+                var step = (jl - dx.offsetLeft)/10;
+                step = step>0?Math.ceil(step):Math.floor(step);
+                if(dx.offsetLeft==jl){
+                    clearInterval(time1);
+                    if(callback){
+                        callback();
+                    }
+                }
+                dx.style.left = dx.offsetLeft +  step +'px';
+            }, 30);
+         }
+         var button = document.querySelector("button");
+         button.addEventListener("click",function(){
+            donghua1(div,500,function(){
+                // alert("123");
+                div.style.backgroundColor='red';
+             })
+         })
+    </script>
+</body>
+</html>

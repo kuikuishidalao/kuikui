@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="csscode.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src="swiper-bundle.min.js"></script>
+    <script src="myjs.js"></script>
+</head>
+
+<body>
+    <div id="bigbox">
+        <div class="header">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="IMG_20220117_095738.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="IMG_20221001_102346.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="IMG_20220717_180630.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <nav>
+            <a  href="index.html">首页</a>
+            <a href="daunwen1.html">短文</a>
+            <a class="dangqian" href="">日志</a>
+            <a href="donghua.html">动画展示</a>
+            <a href="denglu.html">登录</a>
+        </nav>
+        
+      
+        <div id="main">
+            <div id="main_left">
+                <h2>关于我</h2>
+                <div class="photo1"><img src="1665998905811.jpg" alt=""></div>
+                <p>
+                    <span>姓名</span>:邓朝櫆<br>
+                    <span>性别</span>:男<br>
+                    <span>爱好</span>:听歌 踢足球 打游戏<br>
+                    <span>性格</span> :开朗<br>
+                    <span>家乡</span>:四川成都<br>
+                    <span>专业</span>:计算机科学与技术
+                </p>
+            </div>
+            <div id="main_right">
+                <h2>日志</h2>
+                <div>
+                    <h3>
+                        【游戏】中国游戏厂商4月吸金超20亿美元腾讯网易相继加快出海
+                    </h3>
+                    8小时前财联社5月9日讯(编辑胡家荣)今日SensorTower公布最新一期游戏收入排行,其中38个中国厂商入围全球手游发行商收入榜TOP100,合计吸金超过23亿美元,占全球TOP100手游发行商收入41.8%。在以上的排名中,腾讯控股(O0700)旗下多款游戏入围....
+                </div>
+                <div>
+                    <h3>
+                        英特尔Arc Alchemist游戏显卡据称推迟到夏季中期上市
+                    </h3>
+                    根据lgor's Lab的最新信息,英特尔备受期待的
+                    ArcAlchemist游戏显卡的研发工作很有可能被推迟到夏季中期甚至更晚完工,但基于与驱动有关的各种问题,推出时间很可能继续被推迟。几天前,我们...
+                    
+                </div>
+                <div>
+                    <h3>
+                        游戏资讯|网龙《魔域》华南虎公益版将于5月20日上线繁育_中国玩家
+                    </h3>
+                    网龙旗下经典MMORPG网游《魔域》近日以玩家的名义认养国家一级保护动物华南虎,让玩家在游戏外开启“云养虎”模式,并向玩家征集两只小萌虎的名字,如今两只萌虎的名字出炉了——“萌萌”...
+                </div>
+                <div>
+                    <h3>
+                        受亚运延期消息影响一众游戏公司股票下跌
+                    </h3>
+                    一众游戏公司股票下跌5月6日下午消息,亚奥理事会总干事今日宣布,原定于9月10日至25日在杭州举办的第19届亚运会将延期举行,具体日期择期宣布。受亚运延期消息影响,电魂网络跌停,报19.64元;完美世界跌6.21%,报...
+                </div>
+                <div id="donghua"></div>
+                <script>
+                    var n = 1
+                    
+                    var id=setInterval(()=>{
+                      if(n<=800){
+                        n=n+1;
+                        donghua.style.left=n+'px';
+                      }
+                      else{
+                        clearInterval(id)
+                      }
+                    })
+                    </script>
+                    
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                计科205 邓朝櫆
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
